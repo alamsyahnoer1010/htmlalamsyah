@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Studi Kasus: Validasi Input HTML5</title>
+	</head>
+	<body>
+		<caption><h3>Studi Kasus: Validasi Input HTML5</h3></caption>
+		<table border="0">
+			<tr>
+				<td>Nama</td>
+				<td>: <input type="text" name="nama" placeholder="Isikan nama Anda" pattern="[a-z]" onkeypress="return event.charCode<48 || event.charCode>57" required=""></input></td>
+			</tr>
+			<tr>
+				<td>Usia</td>
+				<td>: <input type="number" name="umur" max="30" min="17" size="3" required=""></input> (Usia min. 17-30)</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>: <input type="email" name="mail" placeholder="nama_email@host.com" required=""></input></td>
+			</tr>
+			<tr>
+				<td>Web</td>
+				<td>: <input type="text" name="web" placeholder="http://" size="30" required=""></input></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>: <input type="password" name="pass" placeholder="Semua karakter, min8" min="8" size="16" required=""></input><strong><i> (Bonus)</i></strong></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit"></input></td>
+			</tr>
+		</table>
+	</body>
+</html>
