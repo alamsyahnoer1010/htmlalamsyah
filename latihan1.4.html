@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Style Sheet</title>
+		<!-- Style Sheet Embedded -->
+		<style type="text/css">
+			p {color: red;
+				font-style: italic;}
+		</style>
+		<style type="text/css">
+			.style1 {
+				color: red;
+				font-style: italic;
+			}
+			#style2 {
+				color: blue;
+				font-weight: bold;
+			}
+		</style>
+		<style type="text/css">
+		b,p,a, {
+			color: red;
+			font-style: italic;
+		}
+		</style>
+		<!-- Style Sheet Linked -->
+		<link rel="stylesheet" href="filestyle.css" type="text/css"/>
+		<!-- Style Font -->
+		<style type="text/css">
+		.style_font {
+			font-family: Georgia;
+			font-size: 18px;
+			font-style: italic;
+			font-weight: bold;
+			text-decoration: underline;
+			color: red;
+		}
+		</style>
+		<!-- mengatur spasi -->
+		<style type="text/css">
+		.style_font {
+			line-height: 36px;
+		}
+		</style>
+		<!-- border -->
+		<style type="text/css">
+		.border1{
+			border: 1px solid red;
+		}
+		.border2 {
+			border: 1px dashed red;
+		}
+		.border3 {
+			border: 1px dotted red;
+		}
+		</style>
+		<!-- padding -->
+		<style type="text/css">
+		.border1 {
+			border: 1px solid red;
+			padding: 10px;
+		}
+		.border2 {
+			border: 1px solid red;
+			padding: 20px 10px 5px 40px;
+		}
+		</style>
+		<!-- list -->
+		<style type="text/css">
+		#leftmenu ul {
+			width: 200px;
+			list-style-type: none;
+			padding: 0; margin: 0;
+		}
+		#leftmenu a:link, #leftmenu a:visited, #leftmenu a:active {
+			padding-left: 15px;
+			text-decoration: none;
+		}
+		#leftmenu a{
+			padding: 5px 0px 5px 15px; display: block;
+			background: #6cae15 no-repeat left center;
+			margin: 0px 0px 1px; color: #ffffff;
+		}
+		#leftmenu a:hover {
+			background: #5e9711 no-repeat left center; color: #ffffff
+		}
+		</style>
+		<!-- ukuran area dan posisi area -->
+		<style type="text/css">
+		.box1 {
+			float: left;
+			width: 200px;
+			height: 50px;
+			background: grey;
+			border: 1px solid red;
+		}
+		.box2 {
+			float: right;
+			padding: 10px;
+			width: 300px;
+			height: 100px;
+			border: 1px solid red;
+		}
+		.box3 {
+			clear: both;
+			float: left;
+			width: 200px;
+			height: 50px;
+			background: grey;
+			border: 1px solid red;
+		}
+		</style>
+		<!-- membuat border -->
+		<style type="text/css">
+		.round{
+			background-color: #ddccb5;
+			-moz-border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border: 2px solid #897048;
+			padding: 10px;
+			width: 310px;
+		}
+		</style>
+	</head>
+	<body>
+		<!-- Style Sheet Inline -->
+		<!-- menerapkan embedded style pada paragaf -->
+		<p style="color: red; font-style: italic;">
+		Ini paragraf pertama
+		<!-- menerapkan embedded style pada paragaf -->
+		<p style="color: blue; font-weight: bold;">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		<p>
+		ini paragraf ketiga
+		<br>
+		<!-- Style Sheet Embedded -->
+		<p>
+		Ini paragraf pertama
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+		<p>
+		Ini paragaraf ketiga
+		<p class="style1">
+		Ini paragraf pertama
+		<p id="style2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+		<p class="style1">
+		ini paragraf ketiga
+		<!-- Style Sheet Linked -->
+		<p class="style1">
+		Ini paragraf pertama
+		<p id="style2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+		<p class="style1">
+		ini paragraf ketiga
+		<!-- Style Font -->
+		<p class="style_font">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		<!-- mengatur spasi -->
+		<p class="style_font">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua.
+		<!-- border -->
+		<p class="border1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+		<p class="border2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+		<p class="border3">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+		<!-- padding -->
+		<p class="border1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+		<p class="border2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat.
+		<!-- list -->
+		List Normal
+		<ul>
+			<li>Satu</li>
+			<li>Dua</li>
+		</ul>
+		<hr />
+		Style List
+		<div id="leftmenu">
+		<ul>
+		<li><a href="#">Menu satu</a></li>
+		<li><a href="#">Menu dua</a></li>
+		<li><a href="#">Menu tiga</a></li>
+		</ul>
+		<!-- membuat border -->
+		<div class="round">
+			Gampang sekali lho bikin rounded border :-)
+		</div>
+		<br/>
+		<div class="round">
+			Pembuatan rounded border menggunakan CSS3 memang sangat mudah. Tidak perlu file gambar sama sekali, seperti pada CSS sebelumnya
+		</div>
+		<br>
+		<!-- ukuran area dan posisi area -->
+		<div class="box1">
+			Paragraf ini di dalam tag &lt;div&gt;
+		</div>
+		<div class="box2">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</div>
+		<div class="box3">
+			Paragraf ini di dalam tag &lt;div&gt;
+		</div>
+		<br>
+		<br>
+	</body>
+</html>
