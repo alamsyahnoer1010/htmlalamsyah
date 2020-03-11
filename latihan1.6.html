@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Menggunakan Media Query CSS3</title>
+		<!-- Menggunakan Media Query -->
+		<!--<style>
+		.smartphone {
+			display: none;
+		}
+		@media only screen and (max-width: 375px){
+			body {
+				background-color: yellow;
+			}
+			.smartphone{
+				display: block;
+			}
+		}
+		</style>-->
+		<!-- Desain Halaman Web Responsif -->
+		<style>
+			#wrapper {
+				margin: auto;
+				width: 100%;
+			}
+			#header {
+				height: 150px;
+				padding: 20px;
+				border: 2px solid red;
+			}
+			#nav {
+				margin: auto;
+				padding: 20px;
+				height: 200px;
+				border: 2px solid red;
+			}
+			.box {
+				float: left;
+				width: 22%;
+				margin: 0 2% 0 0;
+				height: 120px;
+				background: red;
+				border: 2px solid red;
+			}
+			#footer {
+				padding: 20px;
+				height: 120px;
+				border: 2px solid red;
+			}
+			@media only screen and (max-width: 768px){
+				#nav {
+					height: 360px;
+				}
+				.box {
+					width: 45%;
+					margin: 0 4% 20px 0;
+				}
+			}
+			@media only screen and (max-width: 375px){
+				#nav{
+					height: 640px;
+				}
+				.box{
+					width: 100%;
+					margin: 0 0 20px 0;
+				}
+			}
+		</style>
+		<!-- Animasi Transisi -->
+		<!--<style>
+		.box {
+			width: 40%;
+			height: 100px;
+			background: orange;
+			border: 2px solid #212121;
+			-webkit-transition: width 1s ease-in-out;
+			-o-transition :width 1s ease-in-out;
+			-moz-transition: width 1s ease-in-out;
+			transition: width 1s ease-in-out;
+		}
+		@media (orientation:landscape){
+			.box {
+				width: 100%
+			}
+		}
+		</style>-->
+	</head>
+	<body>
+		<!-- Animasi Transisi -->
+		<!--<h3>Transisi</h3>
+		<div class="box"></div>
+		<p>
+			Ubah orientasi ke landscape / potrait dan sebaiknya untuk melihat efek transisi
+		</p>-->
+		<!-- Desain Halaman Web Responsif -->
+		<div id = "wrapper">
+			<div id="header">
+				<h2>Header</header>
+			</div>
+			<div id="nav">
+				<h2>Services</h2>
+				<div class="box">
+					BOX 1
+				</div>
+				<div class="box">
+					BOX 2
+				</div>
+				<div class="box">
+					BOX 3
+				</div>
+				<div class="box">
+					BOX 4
+				</div>
+			</div>
+			<div id="footer">
+				<h2>Footer</h2>
+			</div>
+		</div>
+		<!-- Menggunakan Media Query -->
+		<!--<h3>Menggunakan Media Query CSS3</h3>
+		<div class="smartphone">
+			<h2>Terdeteksi ukuran smartphone</h2>
+		</div>-->
+	</body>
+</html>
