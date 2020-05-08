@@ -1,0 +1,48 @@
+#wrapper {
+	margin: auto;
+	width: 100%;
+}
+#nav {
+	width: auto;
+	height: 70px;
+	background: #9F7A51;
+	padding-left: 10px;
+	padding-bottom: 15px;
+	font-family: Sweet Easy Personal Use;
+}
+#daftar{
+	font-family: mileadilan;
+	border: 4px solid white;
+	line-height: 50px;
+	border-radius: 5px;
+	margin: auto;
+	width: 150px;
+}
+#header {
+	width: auto;
+	height: 670px;
+	background: url('Headerweb.png');
+}
+#isi{
+	width: auto;
+	height: 90px;
+	background: #D6A831;
+	margin: auto;
+	padding-top: 20px;
+	font-family: mileadilan;
+}
+#footer{
+	width: auto;
+	height: 50px;
+	background: #B33630;
+	margin: auto;
+	padding-top: 20px;
+	font-family: Arial;
+	color: white;
+}
+#produk{
+	width: auto;
+	height: auto;
+	margin: auto;
+	background: #EEEEEF;
+}
