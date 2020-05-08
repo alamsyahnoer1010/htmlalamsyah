@@ -1,0 +1,44 @@
+<?php
+	if(isset($_GET['pesan'])){
+		if($_GET['pesan'] == "tambah"){
+			echo '<script type="text/javascript">
+  			alert("Pesanan Anda telah tersimpan");
+			</script>';
+		}
+	}
+?>
+<div id="produk">
+	<table align="center" height="490px">
+		<tr>
+			<td width="500" align="left"><img src="pastry1.jpg" width="400px" height="400px"></td>
+			<td width="500">
+				<font size="8" face="Arial">Berry Fruit Pastries</font>
+				<br><font size="6" face="Arial" color="#D6A831">Rp. 150.000</font>
+				<hr size="2">
+				<font size="5">Deskripsi Produk:</font>
+				<br>
+				<font size="3">Berry Fruit Pastries merupakan salah satu jenis pastry buatan kami yang paling diminati saat ini. Rasa manis asam dari buah Berry menyatu dengan tekstur dari pastry yang elegan, membuat lidah terasa ingin selalu mencobanya.
+					<br>
+				</font>
+				<hr size="2">
+				<form method="post" action="tambahproduk2.php">
+					<table>
+						<tr>
+							<td><input type="number" min="1" name="produk2"></td>
+						</tr>
+						<tr>
+							<td><input type="submit" value="Masukkan Keranjang"></td>
+						</tr>
+					</table>
+				</form>
+				<form method="post" action="index.php?page=checkout">
+					<table>
+						<tr>
+							<td><input type="submit" value="Checkout"></td>
+						</tr>
+					</table>
+				</form>
+			</td>
+		</tr>
+	</table>
+</div>
